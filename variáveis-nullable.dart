@@ -11,10 +11,10 @@ void saudacoes(
   String sep = '-',
 }) {
   print(sep * 20);
-  print('Saudações do $nome!');
+  print('Saudações do ${nome.toUpperCase()}!');
   
   if(cliente != null){
-  print('Seja bem vinde, $cliente!');
+  print('Seja bem vinde, ${cliente.toUpperCase()}!');
   }
   
   if (mostrarAgora) {
