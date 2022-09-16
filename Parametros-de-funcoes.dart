@@ -1,5 +1,5 @@
 void main() {
-  saudacoes('Jorge Paulo',);
+  saudacoes('Jorge Paulo');
   saudacoes('Lucas Augusto', mostrarAgora: false);
   saudacoes('Matheus', mostrarAgora: true, sep: '+');
 }
