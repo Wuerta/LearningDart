@@ -13,9 +13,9 @@ void saudacoes(
   print(sep * 20);
   print('Saudações do ${nome.toUpperCase()}!');
   
-  if(cliente != null){
-  print('Seja bem vinde, ${cliente.toUpperCase()}!');
-  }
+  String c = cliente ?? 'Cliente não informado.'; 
+  print('Seja bem vinde, ${c.toUpperCase()}!');
+ 
   
   if (mostrarAgora) {
     print('Agora: ${agora()}');
