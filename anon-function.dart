@@ -1,17 +1,19 @@
 void main() {
-  saudacoes('Jão', cliente: 'Luca', body: (i, j) {
-  print('Processing data...');
-  if(i >= j){ 
-    j++;
-    print('$j%');  
-  }
-  else if(i <= j){
-    j--;
-    print('$j%');
-  }
-  print('FINISHED! \n');
-},
-);
+  saudacoes(
+    'Jão',
+    cliente: 'Luca',
+    body: (i, j) {
+      print('Processing data...');
+      if (i >= j) {
+        j++;
+        print('$j%');
+      } else if (i <= j) {
+        j--;
+        print('$j%');
+      }
+      print('FINISHED! \n');
+    },
+  );
 }
 
 void saudacoes(
@@ -36,5 +38,4 @@ String agora() {
   DateTime agora = DateTime.now();
   return agora.toString();
 }
-
 
