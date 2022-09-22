@@ -1,5 +1,5 @@
 void main() {
-  saudacoes('Jão', cliente: 'Luca', body: timer);
+  saudacoes('Jão', cliente: 'Luca', body: negativeTimer);
 }
 
 void timer() {
@@ -9,6 +9,17 @@ void timer() {
   while (i <= 10) {
     print(i);
     i++;
+  }
+  print('FINISHED! \n');
+}
+
+void negativeTimer() {
+  int i = 10;
+
+  print('Computing data...');
+  while (i >= 0) {
+    print(i);
+    i--;
   }
   print('FINISHED! \n');
 }
