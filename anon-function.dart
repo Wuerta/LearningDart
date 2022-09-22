@@ -1,22 +1,19 @@
 void main() {
-  saudacoes('Jão', cliente: 'Luca', body: timer);
+  saudacoes('Jão', cliente: 'Luca', body: negativeTimer);
 }
 
 void timer(int i) {
-  print('Computing data...');
-  for(int j = 0; j <= i; j++) {
+  print('Processing data...');
+  for (int j = 0; j <= i; j++) {
     print('$j%');
   }
   print('FINISHED! \n');
 }
 
-void negativeTimer() {
-  int i = 10;
-
-  print('Computing data...');
-  while (i >= 0) {
-    print(i);
-    i--;
+void negativeTimer(int i) {
+  print('Processing data...');
+  for (int k = 100; k >= i; k--) {
+    print('$k%');
   }
   print('FINISHED! \n');
 }
@@ -27,7 +24,10 @@ void saudacoes(
   String? cliente,
   required Function(int) body,
 }) {
-  body(100);
+  /*
+  When using 'negativeTimer', use 100 inside body(); , therfore using 'timer' set body to 0
+  */
+  body(0);
 
   print('Saudações do ${nome.toUpperCase()}!');
 
@@ -43,3 +43,5 @@ String agora() {
   DateTime agora = DateTime.now();
   return agora.toString();
 }
+
+
