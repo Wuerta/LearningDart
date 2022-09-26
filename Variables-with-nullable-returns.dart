@@ -4,6 +4,8 @@ void main (){
 }
 
 String? funcao(int x){
-  if (x>10)
-    return 'Jão!';
+  if (x>10) return 'Jão!';
+  
+  // It's a good habit return a null value insted nothing
+  return null;
 }
